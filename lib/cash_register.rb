@@ -9,7 +9,7 @@ class CashRegister
 
   def add_item(title, price, quantity=1)
     @total = @total + price * quantity
-    quantity.times do |title|
+    quantity.times do
       @items << title
     end
   end
